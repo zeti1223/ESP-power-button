@@ -1,0 +1,43 @@
+# ----------------------------------------------------------------------
+# GIT IGNORE az ESP32/Arduino projektekhez
+# ----------------------------------------------------------------------
+
+# 1. ÉRZÉKENY ADATOK (Secrets)
+# A Wi-Fi hitelesítő adatokat tartalmazó fájl
+secrets.h
+
+# 2. ARDUINO IDE / PLATFORMIO ÉS FORDÍTÁSI MELLÉKTERMÉKEK
+# Arduino IDE által generált ideiglenes build mappák:
+/build
+/build-*/
+/Release/
+/Debug/
+
+# PlatformIO által generált mappa
+.pio/
+
+# PlatformIO / VS Code cache fájl
+.vscode/arduino.json
+
+# Fordított binárisok és objektumok
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+
+# 3. MŰKÖDÉS KÖZBENI ADATOK
+# Az ESP32 által futás közben (Preferences/NVS) használt konfigurációs adatok
+# (általában a flash-re kerülnek, de ha vannak lokális NVS fájlok, azt is ignoráljuk)
+nvs.csv
+
+# 4. OPERÁCIÓS RENDSZER (OS) FÁJLOk
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+*~
+\#*
